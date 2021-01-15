@@ -8,34 +8,30 @@
 </head>
 <body>
 
-    <div class="cart-container">
-        <h1 class="title">cart total: <span id="total">0</span></h1>
-    </div>
-
     <div class="flower-container">
         <h1 class="title">Flowers</h1>
         <div class="item-container">
-            <item>
+            <item class="image">
                 <div class="image-container">
                     <img src="images/bonsai.jpg" alt="Bonsai">
                     <div class="overlay">
-                        <h1>bonsai</h1>
+                        <h2>bonsai</h2>
                     </div>
                 </div>
             </item>
-            <item>                
+            <item class="image">                
                 <div class="image-container">
                     <img src="images/colorful.jpg" alt="Colorful">
                     <div class="overlay">
-                        <h1>colorful</h1>
+                        <h2>colorful</h2>
                     </div>
                 </div>
             </item>
-            <item>
+            <item class="image">
                 <div class="image-container">
                     <img src="images/roses.jpg" alt="Blue Rose">
                     <div class="overlay">
-                        <h1>blue rose</h1>
+                        <h2>blue rose</h2>
                     </div>
                 </div>
             </item>
@@ -43,20 +39,41 @@
         <div class="item-container">
             <item>
                 <div class="button-container">
-                    <button value="bonsai">Buy</button>
+                    <button value="bonsai">65 $</button>
                 </div>
             </item>
             <item>
                 <div class="button-container">
-                    <button value="colorful">Buy</button>
+                    <button value="colorful">31 $</button>
                 </div>
             </item>
             <item>
                 <div class="button-container">
-                    <button value="blue rose">Buy</button>
+                    <button value="blue rose">7 $</button>
                 </div>
             </item>
         </div>
+    </div>
+
+    <div class="cart-container">
+        <section>
+            <div><img src="images/roses.jpg" alt=""></div>
+            <div><h5>info: <span id="total">0</span></h5></div>
+            <div>price</div>
+            <div>close btn</div>
+        </section>
+        <section>
+            <div><img src="images/bonsai.jpg" alt=""></div>
+            <div><h5>info: <span id="total">0</span></h5></div>
+            <div>price</div>
+            <div>close btn</div>
+        </section>
+        <section>
+            <div><img src="images/colorful.jpg" alt=""></div>
+            <div><h5>info: <span id="total">0</span></h5></div>
+            <div>price</div>
+            <div>close btn</div>
+        </section>
     </div>
 
     <div class="cart" id="cart"></div>

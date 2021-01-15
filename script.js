@@ -2,7 +2,7 @@ let total = 0;
 
 document.querySelectorAll('button').forEach((button) => {
     button.onclick = () => {
-        if (total >= 28)
+        if (total >= 248)
             return;
         else total++;
         document.getElementById('total').innerText = total;
