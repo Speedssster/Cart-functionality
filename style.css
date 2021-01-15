@@ -11,15 +11,17 @@
 body {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     background: linear-gradient(90deg,#a85160,#a8384b, #681725);
     user-select: none;
+    gap: 5%;
+    margin: 0% 5%;
 }
 .flower-container {
-    margin-top: 1rem;
+    margin-top: 12.5%;
     background-color: #c8cecf;
     box-shadow: 0px 0px 50px #4d3d3d;
-    width: 70%;
+    width: 60%;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
@@ -106,11 +108,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
     background-color: #c8cecf;
     box-shadow: 0px 0px 20px rgb(54, 53, 53);
-    width: 50%;
-    padding: 2rem 1.5rem;
+    width: 35%;
+    padding: 3rem;
 }
 
 .cart-container section {
@@ -118,17 +119,17 @@ button:hover {
     flex-direction: row;
     background-color: #b7bdbe;
     margin: 0.5rem 1.5rem;
-    width: 80%;
-    height: 4rem;
+    width: 100%;
 }
 
 .cart-container section div {
-    width: 25%;
+    width: 30%;
+    border: solid 1px red;
 }
 .cart-container img {
-    border-radius: 50%;
+    border-radius: 5rem;
     width: 100%;
     height: 100%;
-    padding: 0.5rem 2rem;
+    padding: 1rem;
     object-fit: cover;
 }
