@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cart-container">
+        <h1 class="title">cart total: <span id="total">0</span></h1>
+    </div>
+
+    <div class="flower-container">
+        <h1 class="title">Flowers</h1>
+        <div class="item-container">
+            <item>
+                <div class="image-container">
+                    <img src="images/bonsai.jpg" alt="Bonsai">
+                    <div class="overlay">
+                        <h1>bonsai</h1>
+                    </div>
+                </div>
+            </item>
+            <item>                
+                <div class="image-container">
+                    <img src="images/colorful.jpg" alt="Colorful">
+                    <div class="overlay">
+                        <h1>colorful</h1>
+                    </div>
+                </div>
+            </item>
+            <item>
+                <div class="image-container">
+                    <img src="images/roses.jpg" alt="Blue Rose">
+                    <div class="overlay">
+                        <h1>blue rose</h1>
+                    </div>
+                </div>
+            </item>
+        </div>
+        <div class="item-container">
+            <item>
+                <div class="button-container">
+                    <button value="bonsai">Buy</button>
+                </div>
+            </item>
+            <item>
+                <div class="button-container">
+                    <button value="colorful">Buy</button>
+                </div>
+            </item>
+            <item>
+                <div class="button-container">
+                    <button value="blue rose">Buy</button>
+                </div>
+            </item>
+        </div>
+    </div>
+
+    <div class="cart" id="cart"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
