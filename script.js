@@ -17,7 +17,7 @@ let cart = {
     },
     "third": {
         "name": "cozy isolation",
-        "src": "images/img3.png",
+        "src": "images/img3.jpg",
         "price": 32,
         "qty": 0
     }
@@ -39,6 +39,7 @@ showCart = () => {
     } else
         alert('Your Cart is empty. Buy something first then try!');
 }
+
 create = (id) => {
     total.innerText = ++total_qty;
     let selected = cart[id];
@@ -52,7 +53,6 @@ create = (id) => {
             <span class="sum">$ ${selected.qty*selected.price}</span>
         </div>`;
 }
-
 
 minus = (item) => {
     total.innerText = --total_qty;
