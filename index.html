@@ -4,41 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Shopping</title>
+    <title>Cart Functionality</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
+    <div id="total-container" onclick="showCart()">
+        <h1>Cart total items: <span id="total">0</span></h1>
+    </div>
 
-        <div class="column">
-            <h1>nature gradient</h1>
-            <img src="images/p1x300x300.jpg" alt="">
-            <div>
+    <div id="item-container">
 
+        <div class="item">
+            <div class="bounce">
+                <span>horizon view</span>
+                <img src="images/img1.jpg" alt="">
+            </div>
+            <div class="info">
+                <span>$ 41</span>
+                <button value="first">add to Cart</button>
             </div>
         </div>
 
-        <div class="column">
-            <h1>pennie alps</h1>
-            <img src="images/p2x300x300.png" alt="">
-            <div>
-
+        <div class="item">
+            <div class="bounce">
+                <span>rhaetian alps</span>
+                <img src="images/img2.jpg" alt="">
+            </div>
+            <div class="info">
+                <span>$ 53</span>
+                <button value="second">add to Cart</button>
             </div>
         </div>
 
-        <div class="column">
-            <h1>cozy isolation</h1>
-            <img src="images/p3x300x300.png" alt="">
-            <div>
-
+        <div class="item">
+            <div class="bounce">
+                <span>cozy isolation</span>
+                <img src="images/img3.png" alt="">
+            </div>
+            <div class="info">
+                <span>$ 32</span>
+                <button value="third">add to Cart</button>
             </div>
         </div>
 
     </div>
 
+    <div id="cart-container"></div>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
