@@ -25,32 +25,38 @@ let cart = {
 
 document.querySelectorAll('.info>button').forEach((button) => {
     button.onclick = () => {
-        total.innerText = ++total_qty;
-        let selected = cart[button.value];
         let cart_item = document.getElementById(button.value);
-        if (cart_item) {
-            cart_item.getElementsByClassName('qty')[0].innerHTML = ++selected.qty + ' pcs';
-            cart_item.getElementsByClassName('sum')[0].innerHTML = '$ ' + selected.qty * selected.price;
-        } else {
-            container.innerHTML += `<div class="cart-item" id="${button.value}">
-                <img src="${selected.src}">
-                <span class="name">${selected.name}</span>
-                <span class="minus" onclick="minus(this.parentElement)">-</span>
-                <span class="qty">${++selected.qty} pcs</span>
-                <span class="plus" onclick="plus(this.parentElement)">+</span>
-                <span class="sum">$ ${selected.qty*selected.price}</span>
-            </div>`
-        }
+        if (cart_item)
+            plus(cart_item);
+        else create(button.value)
     };
 });
 
 showCart = () => {
-    container.style.display = 'flex';
-    container.scrollIntoView();
+    if (total_qty != 0) {
+        container.style.display = 'flex';
+        container.scrollIntoView();
+    } else
+        alert('Your Cart is empty. Buy something first then try!');
 }
+create = (id) => {
+    total.innerText = ++total_qty;
+    let selected = cart[id];
+    container.innerHTML +=
+        `<div class="cart-item" id="${id}">
+            <img src="${selected.src}">
+            <span class="name">${selected.name}</span>
+            <span class="minus" onclick="minus(this.parentElement)">-</span>
+            <span class="qty">${++selected.qty} pcs</span>
+            <span class="plus" onclick="plus(this.parentElement)">+</span>
+            <span class="sum">$ ${selected.qty*selected.price}</span>
+        </div>`;
+}
+
 
 minus = (item) => {
     total.innerText = --total_qty;
+
     if (total_qty == 0)
         container.style.display = 'none';
 
